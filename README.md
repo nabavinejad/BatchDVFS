@@ -1,6 +1,6 @@
 # BatchSizer
 
-BatchSizer is a runtime system that leverages dynamic batching in inference phase of DNNs to control the power consumption of GPU accelerators. As can be seen in the following image, it changes the batch size over the course to manage the power consumption considering power cap.
+BatchSizer is a runtime system that leverages dynamic batching in inference phase of DNNs to control the power consumption of GPU accelerators. As can be seen in the following image, it changes the batch size over the course of time to manage the power consumption considering power cap.
 
 
 ![BatchSizer](https://github.com/nabavinejad/BatchSizer/blob/main/test.gif)
