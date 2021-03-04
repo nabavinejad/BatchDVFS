@@ -1,9 +1,9 @@
-# BatchSizer
+# BatchDVFS
 
-BatchSizer is a runtime system that leverages dynamic batching in inference phase of DNNs to control the power consumption of GPU accelerators. As can be seen in the following image, it changes the batch size over the course of time to manage the power consumption considering power cap.
+BatchDVFS is a runtime system that leverages dynamic batching in inference phase of DNNs to control the power consumption of GPU accelerators. As can be seen in the following image, it changes the batch size over the course of time to manage the power consumption considering power cap.
 
 
-![BatchSizer](https://github.com/nabavinejad/BatchSizer/blob/main/test.gif)
+![BatchSizer](https://github.com/nabavinejad/BatchDVFS/blob/main/test.gif)
 
 
 ## Requirements
@@ -19,6 +19,6 @@ We have two image datasets, one from [ImageNet](http://www.image-net.org/) which
 
 ## Usage
 
-There are three folders in the repository: BatchSizer, Clipper, and DVFS that are equivalent to approaches presented in the paper. inside each folder, there is another one that contains the results of the experimented that we have conducted and expalined in the paper. In addition to that, there are 16 .py files that correspond to the 16 DNNs. The .sh file is used for launching the jobs in the experiments. We have assumed that the .py files and the frozen graphs (.pb) are in the same directory.
+There are three folders in the repository: BatchDVFS, Clipper, and DVFS that are equivalent to approaches presented in the paper. inside each folder, there is another one that contains the results of the experimented that we have conducted and expalined in the paper. In addition to that, there are 16 .py files that correspond to the 16 DNNs. The .sh file is used for launching the jobs in the experiments. We have assumed that the .py files and the frozen graphs (.pb) are in the same directory.
 
-Moreover, there is an extra folder in BatchSizer folder, named SensitiviyAnalysis that includes the files needed for conducting the sensitivity analysis experiments. The .py files in this folder are slightly different from the ones in the main folder and enable the dynmiac power cap change during the execution of a model.
+Moreover, there is an extra folder in BatchDVFS folder, named SensitiviyAnalysis that includes the files needed for conducting the sensitivity analysis experiments. The .py files in this folder are slightly different from the ones in the main folder and enable the dynmiac power cap change during the execution of a model.
