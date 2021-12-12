@@ -10,7 +10,7 @@ do
 	mongo < mongoDB_Commands.js
 	sleep 5
 
-	python /home/scale/Morteza/Bayesian/Spearmint/spearmint/main.py /home/scale/Morteza/GPUApprox/ &
+	python /path/to/Spearmint/spearmint/main.py /path/to/python/files/ &
 	PID=$!
 	
 	echo $PID > processID.txt
