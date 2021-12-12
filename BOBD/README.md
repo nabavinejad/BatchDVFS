@@ -25,4 +25,4 @@ We have two image datasets, one from [ImageNet](http://www.image-net.org/) which
 
 ## Usage
 
-To run the experiments for all the jobs, we need to copy the .py files in all the three folders in a single folder. Then, by running the Spearmint_BOBD.sh file, all the jobs will be executed. Please note that in Spearmint_BOBD.sh, we have to set the path for spearmint. 
+To run the experiments for all the jobs, we need to copy the .py files in all the three folders in a single folder. Then, by running the Spearmint_BOBD.sh file, all the jobs will be executed. Please note that in Spearmint_BOBD.sh, we have to set the path for spearmint. Also, the path to image folder shoud be set in BO_DNNname_dataset.py files.
