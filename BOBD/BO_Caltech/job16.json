@@ -1,0 +1,31 @@
+{
+    "language"        : "PYTHON",
+    "main-file"       : "BO_InceptionV1_Caltech",
+    "experiment-name" : "myconstraint",
+	"max-finished-jobs" : 50,
+    "variables": {
+        "DVFS_Index": {
+            "type": "INT",
+            "size": 1,
+            "min":  0,
+            "max":  9
+        },
+		"BS": {
+            "type": "INT",
+            "size": 1,
+            "min":  1,
+            "max":  256
+        }
+    },
+    "tasks": {
+      "objective_throughput" : {
+          "type"        : "OBJECTIVE",
+          "likelihood"  : "NOISELESS"
+      },
+      "constraint_power" : {
+          "type"        : "CONSTRAINT",
+          "likelihood"  : "NOISELESS"
+      }
+    },
+    "polling-time" : 1
+}
